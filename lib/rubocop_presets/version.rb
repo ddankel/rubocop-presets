@@ -1,3 +1,3 @@
-module MakandraRubocop
+module RubocopPresets
   VERSION = '5.4.0'.freeze
 end

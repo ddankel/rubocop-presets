@@ -1,17 +1,17 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'makandra_rubocop/version'
+require 'rubocop_presets/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'makandra-rubocop'
-  spec.version = MakandraRubocop::VERSION
+  spec.name = 'rubocop-presets'
+  spec.version = RubocopPresets::VERSION
   spec.required_ruby_version = '>= 2.3.0'
-  spec.authors = ['Arne Hartherz', 'Emanuel Denzel']
-  spec.email = ['arne.hartherz@makandra.de', 'emanuel.denzel@makandra.de']
+  spec.authors = ['Dave Dankel']
+  spec.email = ['ddankel@gmail.com']
 
-  spec.summary = "makandra's default Rubocop configuration"
-  spec.description = 'A relaxed set of default Rubocop settings to use across makandra projects.'
-  spec.homepage = 'https://github.com/makandra/makandra-rubocop'
+  spec.summary = "Default Rubocop configuration"
+  spec.description = 'A set of default Rubocop settings to use across projects.'
+  spec.homepage = 'https://bitbucket.org/ddankel/rubocop_presets'
   spec.license = 'MIT'
 
   # Specify which files should be added to the gem when it is released.
@@ -23,8 +23,9 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r(^exe/)) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rubocop', '~> 0.81.0'
-  spec.add_dependency 'rubocop-rails', '~> 2.5.1'
+  spec.add_dependency 'rubocop', '~> 0.82.0'
+  spec.add_dependency 'rubocop-performance', '1.5.2'
+  spec.add_dependency 'rubocop-rails', '~> 2.5.2'
   spec.add_dependency 'rubocop-rspec', '~> 1.40.0'
 
   spec.add_development_dependency 'bundler', '~> 2.0'
