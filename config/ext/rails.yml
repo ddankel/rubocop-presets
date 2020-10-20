@@ -23,9 +23,54 @@ AllCops:
   # as the default.
   TargetRailsVersion: ~
 
+Rails/ActiveRecordCallbacksOrder: # (new in 2.7)
+  Enabled: true
+
+Rails/AfterCommitOverride: # (new in 2.8)
+  Enabled: true
+
 Rails/ApplicationController:
   Exclude:
     - app/controllers/application_controller.rb # Cop errantly detects this file
 
 Rails/FilePath:
   EnforcedStyle: arguments
+
+Rails/FindById: # (new in 2.7)
+  Enabled: true
+
+Rails/Inquiry: # (new in 2.7)
+  Enabled: true
+
+Rails/MailerName: # (new in 2.7)
+  Enabled: true
+
+Rails/MatchRoute: # (new in 2.7)
+  Enabled: true
+
+Rails/NegateInclude: # (new in 2.7)
+  Enabled: true
+
+Rails/Pluck: # (new in 2.7)
+  Enabled: true
+
+Rails/PluckInWhere: # (new in 2.7)
+  Enabled: true
+
+Rails/RenderInline: # (new in 2.7)
+  Enabled: true
+
+Rails/RenderPlainText: # (new in 2.7)
+  Enabled: true
+
+Rails/ShortI18n: # (new in 2.7)
+  Enabled: true
+
+Rails/SquishedSQLHeredocs: # (new in 2.8)
+  Enabled: true
+
+Rails/WhereExists: # (new in 2.7)
+  Enabled: true
+
+Rails/WhereNot: # (new in 2.8)
+  Enabled: true
