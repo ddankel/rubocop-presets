@@ -72,8 +72,14 @@ AllCops:
 
 #################### Layout ###########################
 
+Layout/BeginEndAlignment: # (new in 0.91)
+  Enabled: true
+
 Layout/EmptyLines:
   Enabled: false
+
+Layout/EmptyLinesAroundAttributeAccessor: # (new in 0.83)
+  Enabled: true
 
 Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: empty_lines
@@ -118,10 +124,73 @@ Layout/SpaceAroundMethodCallOperator:
 
 #################### Lint ###############################
 
+Lint/BinaryOperatorWithIdenticalOperands: # (new in 0.89)
+  Enabled: false # marked as unsafe as of 0.93
+
+Lint/ConstantDefinitionInBlock: # (new in 0.91)
+  Enabled: true
+
+Lint/DeprecatedOpenSSLConstant: # (new in 0.84)
+  Enabled: true
+
+Lint/DuplicateElsifCondition: # (new in 0.88)
+  Enabled: true
+
+Lint/DuplicateRequire: # (new in 0.90)
+  Enabled: true
+
+Lint/DuplicateRescueException: # (new in 0.89)
+  Enabled: true
+
+Lint/EmptyConditionalBody: # (new in 0.89)
+  Enabled: true
+
+Lint/EmptyFile: # (new in 0.90)
+  Enabled: true
+
+Lint/FloatComparison: # (new in 0.89)
+  Enabled: true
+
+Lint/HashCompareByIdentity: # (new in 0.93)
+  Enabled: false # marked as unsafe as of 0.93
+
+Lint/IdentityComparison: # (new in 0.91)
+  Enabled: true
+
+Lint/MissingSuper: # (new in 0.89)
+  Enabled: false
+
+Lint/MixedRegexpCaptureTypes: # (new in 0.85)
+  Enabled: true
+
+Lint/OutOfRangeRegexpRef: # (new in 0.89)
+  Enabled: true
+
 Lint/RaiseException:
   Enabled: true
 
+Lint/RedundantSafeNavigation: # (new in 0.93)
+  Enabled: true
+
+Lint/SelfAssignment: # (new in 0.89)
+  Enabled: true
+
 Lint/StructNewOverride:
+  Enabled: true
+
+Lint/TopLevelReturnWithArgument: # (new in 0.89)
+  Enabled: true
+
+Lint/TrailingCommaInAttributeDeclaration: # (new in 0.90)
+  Enabled: true
+
+Lint/UnreachableLoop: # (new in 0.89)
+  Enabled: true
+
+Lint/UselessMethodDefinition: # (new in 0.90)
+  Enabled: true
+
+Lint/UselessTimes: # (new in 0.91)
   Enabled: true
 
 #################### Metrics ###############################
@@ -154,8 +223,27 @@ Naming/VariableNumber:
 
 #################### Style ###############################
 
+Style/AccessorGrouping: # (new in 0.87)
+  Enabled: true
+  EnforcedStyle: separated
+
+Style/BisectedAttrAccessor: # (new in 0.87)
+  Enabled: true
+
+Style/CaseLikeIf: # (new in 0.88)
+  Enabled: true
+
+Style/ClassEqualityComparison: # (new in 0.93)
+  Enabled: true
+
+Style/CombinableLoops: # (new in 0.90)
+  Enabled: true
+
 Style/EmptyMethod:
   EnforcedStyle: expanded
+
+Style/ExplicitBlockArgument: # (new in 0.89)
+  Enabled: true
 
 Style/ExponentialNotation:
   Enabled: true
@@ -163,13 +251,25 @@ Style/ExponentialNotation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/GlobalStdStream: # (new in 0.89)
+  Enabled: true
+
+Style/HashAsLastArrayItem: # (new in 0.88)
+  Enabled: true
+
 Style/HashEachMethods:
   Enabled: false
+
+Style/HashLikeCase: # (new in 0.88)
+  Enabled: true
 
 Style/HashTransformKeys:
   Enabled: true
 
 Style/HashTransformValues:
+  Enabled: true
+
+Style/KeywordParametersOrder: # (new in 0.90)
   Enabled: true
 
 Style/Lambda:
@@ -183,6 +283,39 @@ Style/MutableConstant:
   Exclude:
     - config/initializers/app_version.rb
 
+Style/OptionalBooleanParameter: # (new in 0.89)
+  Enabled: true
+
+Style/RedundantAssignment: # (new in 0.87)
+  Enabled: true
+
+Style/RedundantFetchBlock: # (new in 0.86)
+  Enabled: true
+
+Style/RedundantFileExtensionInRequire: # (new in 0.88)
+  Enabled: true
+
+Style/RedundantRegexpCharacterClass: # (new in 0.85)
+  Enabled: true
+
+Style/RedundantRegexpEscape: # (new in 0.85)
+  Enabled: true
+
+Style/RedundantSelfAssignment: # (new in 0.90)
+  Enabled: true
+
+Style/SingleArgumentDig: # (new in 0.89)
+  Enabled: true
+
+Style/SlicingWithRange: # (new in 0.83)
+  Enabled: true
+
+Style/SoleNestedConditional: # (new in 0.89)
+  Enabled: true
+
+Style/StringConcatenation: # (new in 0.89)
+  Enabled: true
+
 Style/StringLiterals:
   Enabled: false
 
@@ -193,95 +326,3 @@ Style/WordArray:
   EnforcedStyle: brackets
   Exclude:
     - config/application.rb
-
-######################
-
-Layout/BeginEndAlignment: # (new in 0.91)
-  Enabled: true
-Layout/EmptyLinesAroundAttributeAccessor: # (new in 0.83)
-  Enabled: true
-Lint/BinaryOperatorWithIdenticalOperands: # (new in 0.89)
-  Enabled: false # marked as unsafe as of 0.93
-Lint/ConstantDefinitionInBlock: # (new in 0.91)
-  Enabled: true
-Lint/DeprecatedOpenSSLConstant: # (new in 0.84)
-  Enabled: true
-Lint/DuplicateElsifCondition: # (new in 0.88)
-  Enabled: true
-Lint/DuplicateRequire: # (new in 0.90)
-  Enabled: true
-Lint/DuplicateRescueException: # (new in 0.89)
-  Enabled: true
-Lint/EmptyConditionalBody: # (new in 0.89)
-  Enabled: true
-Lint/EmptyFile: # (new in 0.90)
-  Enabled: true
-Lint/FloatComparison: # (new in 0.89)
-  Enabled: true
-Lint/HashCompareByIdentity: # (new in 0.93)
-  Enabled: false # marked as unsafe as of 0.93
-Lint/IdentityComparison: # (new in 0.91)
-  Enabled: true
-Lint/MissingSuper: # (new in 0.89)
-  Enabled: false
-Lint/MixedRegexpCaptureTypes: # (new in 0.85)
-  Enabled: true
-Lint/OutOfRangeRegexpRef: # (new in 0.89)
-  Enabled: true
-Lint/RedundantSafeNavigation: # (new in 0.93)
-  Enabled: true
-Lint/SelfAssignment: # (new in 0.89)
-  Enabled: true
-Lint/TopLevelReturnWithArgument: # (new in 0.89)
-  Enabled: true
-Lint/TrailingCommaInAttributeDeclaration: # (new in 0.90)
-  Enabled: true
-Lint/UnreachableLoop: # (new in 0.89)
-  Enabled: true
-Lint/UselessMethodDefinition: # (new in 0.90)
-  Enabled: true
-Lint/UselessTimes: # (new in 0.91)
-  Enabled: true
-Style/AccessorGrouping: # (new in 0.87)
-  Enabled: true
-  EnforcedStyle: separated
-Style/BisectedAttrAccessor: # (new in 0.87)
-  Enabled: true
-Style/CaseLikeIf: # (new in 0.88)
-  Enabled: true
-Style/ClassEqualityComparison: # (new in 0.93)
-  Enabled: true
-Style/CombinableLoops: # (new in 0.90)
-  Enabled: true
-Style/ExplicitBlockArgument: # (new in 0.89)
-  Enabled: true
-Style/GlobalStdStream: # (new in 0.89)
-  Enabled: true
-Style/HashAsLastArrayItem: # (new in 0.88)
-  Enabled: true
-Style/HashLikeCase: # (new in 0.88)
-  Enabled: true
-Style/KeywordParametersOrder: # (new in 0.90)
-  Enabled: true
-Style/OptionalBooleanParameter: # (new in 0.89)
-  Enabled: true
-Style/RedundantAssignment: # (new in 0.87)
-  Enabled: true
-Style/RedundantFetchBlock: # (new in 0.86)
-  Enabled: true
-Style/RedundantFileExtensionInRequire: # (new in 0.88)
-  Enabled: true
-Style/RedundantRegexpCharacterClass: # (new in 0.85)
-  Enabled: true
-Style/RedundantRegexpEscape: # (new in 0.85)
-  Enabled: true
-Style/RedundantSelfAssignment: # (new in 0.90)
-  Enabled: true
-Style/SingleArgumentDig: # (new in 0.89)
-  Enabled: true
-Style/SlicingWithRange: # (new in 0.83)
-  Enabled: true
-Style/SoleNestedConditional: # (new in 0.89)
-  Enabled: true
-Style/StringConcatenation: # (new in 0.89)
-  Enabled: true

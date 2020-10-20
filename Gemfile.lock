@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-presets (5.4.0)
+    rubocop-presets (0.93)
       rubocop (~> 0.93.0)
       rubocop-performance (= 1.8.0)
       rubocop-rails (~> 2.8.0)
