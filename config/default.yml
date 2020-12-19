@@ -136,10 +136,22 @@ Lint/DeprecatedOpenSSLConstant: # (new in 0.84)
 Lint/DuplicateElsifCondition: # (new in 0.88)
   Enabled: true
 
+Lint/DuplicateBranch: # (new in 1.3)
+  Enabled: true
+
+Lint/DuplicateRegexpCharacterClassElement: # (new in 1.1)
+  Enabled: true
+
 Lint/DuplicateRequire: # (new in 0.90)
   Enabled: true
 
 Lint/DuplicateRescueException: # (new in 0.89)
+  Enabled: true
+
+Lint/EmptyBlock: # (new in 1.1)
+  Enabled: true
+
+Lint/EmptyClass: # (new in 1.3)
   Enabled: true
 
 Lint/EmptyConditionalBody: # (new in 0.89)
@@ -163,6 +175,9 @@ Lint/MissingSuper: # (new in 0.89)
 Lint/MixedRegexpCaptureTypes: # (new in 0.85)
   Enabled: true
 
+Lint/NoReturnInBeginEndBlocks: # (new in 1.2)
+  Enabled: true
+
 Lint/OutOfRangeRegexpRef: # (new in 0.89)
   Enabled: true
 
@@ -178,10 +193,19 @@ Lint/SelfAssignment: # (new in 0.89)
 Lint/StructNewOverride:
   Enabled: true
 
+Lint/ToEnumArguments: # (new in 1.1)
+  Enabled: true
+
 Lint/TopLevelReturnWithArgument: # (new in 0.89)
   Enabled: true
 
 Lint/TrailingCommaInAttributeDeclaration: # (new in 0.90)
+  Enabled: true
+
+Lint/UnexpectedBlockArity: # (new in 1.5)
+  Enabled: true
+
+Lint/UnmodifiedReduceAccumulator: # (new in 1.1)
   Enabled: true
 
 Lint/UnreachableLoop: # (new in 0.89)
@@ -222,6 +246,8 @@ Naming/VariableNumber:
   EnforcedStyle: snake_case
 
 #################### Style ###############################
+Style/ArgumentsForwarding: # (new in 1.1)
+  Enabled: true
 
 Style/AccessorGrouping: # (new in 0.87)
   Enabled: true
@@ -233,10 +259,16 @@ Style/BisectedAttrAccessor: # (new in 0.87)
 Style/CaseLikeIf: # (new in 0.88)
   Enabled: true
 
+Style/CollectionCompact: # (new in 1.2)
+  Enabled: true
+
 Style/ClassEqualityComparison: # (new in 0.93)
   Enabled: true
 
 Style/CombinableLoops: # (new in 0.90)
+  Enabled: true
+
+Style/DocumentDynamicEvalDefinition: # (new in 1.1)
   Enabled: true
 
 Style/EmptyMethod:
@@ -282,8 +314,16 @@ Style/MixinGrouping:
 Style/MutableConstant:
   Exclude:
     - config/initializers/app_version.rb
+Style/NegatedIfElseCondition: # (new in 1.2)
+  Enabled: true
+
+Style/NilLambda: # (new in 1.3)
+  Enabled: true
 
 Style/OptionalBooleanParameter: # (new in 0.89)
+  Enabled: true
+
+Style/RedundantArgument: # (new in 1.4)
   Enabled: true
 
 Style/RedundantAssignment: # (new in 0.87)
@@ -318,6 +358,9 @@ Style/StringConcatenation: # (new in 0.89)
 
 Style/StringLiterals:
   Enabled: false
+
+Style/SwapValues: # (new in 1.1)
+  Enabled: true
 
 Style/SymbolArray:
   EnforcedStyle: brackets
