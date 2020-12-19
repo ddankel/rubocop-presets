@@ -33,6 +33,9 @@ Rails/ApplicationController:
   Exclude:
     - app/controllers/application_controller.rb # Cop errantly detects this file
 
+Rails/AttributeDefaultBlockValue: # (new in 2.9)
+  Enabled: true
+
 Rails/FilePath:
   EnforcedStyle: arguments
 
@@ -67,6 +70,9 @@ Rails/ShortI18n: # (new in 2.7)
   Enabled: true
 
 Rails/SquishedSQLHeredocs: # (new in 2.8)
+  Enabled: true
+
+Rails/WhereEquals: # (new in 2.9)
   Enabled: true
 
 Rails/WhereExists: # (new in 2.7)
