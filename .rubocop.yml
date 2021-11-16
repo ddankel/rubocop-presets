@@ -1,1 +1,13 @@
-inherit_from: config/default.yml
+inherit_from:
+  - config/default.yml
+  - config/rails.yml
+  - config/rake.yml
+  - config/rspec.yml
+
+inherit_mode:
+  merge:
+    - Exclude
+
+Metrics:
+  BlockLengh:
+    Exclude: rubocop-presets.gemspec

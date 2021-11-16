@@ -1,4 +1,5 @@
-require 'rubocop_presets/version'
+require "rubocop_presets/version"
 
+# Gem module
 module RubocopPresets
 end
