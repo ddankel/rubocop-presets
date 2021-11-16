@@ -14,6 +14,10 @@ And then execute:
 
     $ bundle install
 
+Finally copy the config files into the local project using the provided generator
+
+    rails g rubocop:presets
+
 ## Usage
 
 Add a `.rubocop.yml` to your project with the following contents:
@@ -21,35 +25,29 @@ Add a `.rubocop.yml` to your project with the following contents:
 **For Ruby**
 
 ```yaml
-inherit_gem:
-  rubocop-presets: config/default.yml
-```
+inherit_from:
+  - config/rubocop/default.yml
+  - config/rubocop/rails.yml
+  - config/rubocop/rake.yml
+  - config/rubocop/rspec.yml
 
-**For Rails**
-
-```yaml
-inherit_gem:
-  rubocop-presets:
-    - config/default.yml
-    - config/ext/rails.yml
-```
-
-**For RSpec**
-
-```yaml
-inherit_gem:
-  rubocop-presets:
-    - config/default.yml
-    - config/ext/rspec.yml
+inherit_mode:
+  merge:
+    - Exclude
 ```
 
 Any per-project rules can then be defined in the `.rubocop.yml`:
 
 ```yaml
-inherit_gem:
-  rubocop-presets:
-    - config/default.yml
-    - config/ext/rails.yml
+inherit_from:
+  - config/rubocop/default.yml
+  - config/rubocop/rails.yml
+  - config/rubocop/rake.yml
+  - config/rubocop/rspec.yml
+
+inherit_mode:
+  merge:
+    - Exclude
 
 AllCops:
   Exclude:
@@ -59,18 +57,9 @@ Layout/MultilineArrayLineBreaks:
   Enabled: true
 ```
 
-It also might be desired to set `inherit_mode`, which specifies which configuration keys that have
-array values should be merged together instead of overriding the inherited value:
-
-```yaml
-inherit_mode:
-  merge:
-    - Exclude
-```
-
 ### Executing Rubocop on demand
 
-Run Rubocop via `bundle exec rubocop` from your project directory. For an initial run it might also useful to use the auto-correct option (`bundle exec rubocop --auto-correct`) and carefully check in all changes.
+Run Rubocop via `bundle exec rubocop` from your project directory. For an initial run it might also useful to use the auto-correct option (`bundle exec rubocop --auto-correct`) and carefully check all changes.
 
 ### Integrating Rubocop into your test suite
 
