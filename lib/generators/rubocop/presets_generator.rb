@@ -12,7 +12,7 @@ module Rubocop
       source = File.expand_path("../../../config/*.yml", __dir__)
       destination = "config/rubocop"
 
-      FileUtils.mkdir_p(destination, force: true) unless File.directory?(destination)
+      FileUtils.mkdir_p(destination) unless File.directory?(destination)
       FileUtils.cp_r(Dir.glob(source), destination)
 
 
