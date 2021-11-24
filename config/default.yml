@@ -278,6 +278,9 @@ Metrics/AbcSize:
   Max: 25
 
 Metrics/BlockLength:
+  CountAsOne:
+    - array
+    - hash
   Exclude:
     - lib/tasks/**/*
     - config/environments/*.rb
@@ -290,10 +293,16 @@ Metrics/BlockLength:
 Metrics/ClassLength:
   CountComments: false
   Max: 250
+  CountAsOne:
+    - array
+    - hash
   Exclude:
     - config/routes.rb
 
 Metrics/MethodLength:
+  CountAsOne:
+    - array
+    - hash
   Max: 25
 
 #################### Naming ##############################
