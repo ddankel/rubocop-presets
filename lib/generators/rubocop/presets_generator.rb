@@ -16,8 +16,6 @@ module Rubocop
         FileUtils.mkdir_p(destination) unless File.directory?(destination)
         FileUtils.cp_r(Dir.glob(source), destination)
 
-        # TODO: : puts is wrong.  that outputs this when you run rails g (list rails generators).  There must be a better alternative
-
         puts "Rubocop configs copied to /config/rubocop !!"
         puts "Verify the following at the top of your .rubocop.yml:"
         puts ""

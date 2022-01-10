@@ -7,7 +7,7 @@ Note that we each version is locked to a specific Rubocop version, as Rubocop's 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rubocop-presets', git: 'https://bitbucket.org/ddankel/rubocop-presets'
+gem 'rubocop-presets', git: 'https://github.com/ddankel/rubocop-presets'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Finally copy the config files into the local project using the provided generator
 
-    rails g rubocop:presets
+    $ rails g rubocop:presets
 
 ## Usage
 

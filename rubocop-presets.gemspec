@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Default Rubocop configuration"
   spec.description = "A set of default Rubocop settings to use across projects."
-  spec.homepage = "https://bitbucket.org/ddankel/rubocop-presets"
+  spec.homepage = "https://github.com/ddankel/rubocop-presets"
   spec.license = "MIT"
 
   # Specify which files should be added to the gem when it is released.
