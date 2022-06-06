@@ -28,6 +28,9 @@ AllCops:
   # as the default.
   TargetRailsVersion: ~
 
+Rails/ActionControllerTestCase: # new in 2.14
+  Enabled: true
+
 Rails/ActiveRecordCallbacksOrder: # (new in 2.7)
   Enabled: true
 
@@ -42,6 +45,21 @@ Rails/ApplicationController:
     - app/controllers/application_controller.rb # Cop errantly detects this file
 
 Rails/AttributeDefaultBlockValue: # (new in 2.9)
+  Enabled: true
+
+Rails/CompactBlank: # new in 2.13
+  Enabled: true
+
+Rails/DeprecatedActiveModelErrorsMethods: # new in 2.14
+  Enabled: true
+
+Rails/DuplicateAssociation: # new in 2.14
+  Enabled: true
+
+Rails/DuplicateScope: # new in 2.14
+  Enabled: true
+
+Rails/DurationArithmetic: # new in 2.13
   Enabled: true
 
 Rails/EagerEvaluationLogMessage: # new in 2.11
@@ -60,8 +78,14 @@ Rails/FilePath:
 Rails/FindById: # (new in 2.7)
   Enabled: true
 
+Rails/I18nLazyLookup: # new in 2.14
+  Enabled: false
+
 Rails/I18nLocaleAssignment: # new in 2.11
   Enabled: true
+
+Rails/I18nLocaleTexts: # new in 2.14
+  Enabled: false
 
 Rails/Inquiry: # (new in 2.7)
   Enabled: true
@@ -70,6 +94,9 @@ Rails/MailerName: # (new in 2.7)
   Enabled: true
 
 Rails/MatchRoute: # (new in 2.7)
+  Enabled: true
+
+Rails/MigrationClassName: # new in 2.14
   Enabled: true
 
 Rails/NegateInclude: # (new in 2.7)
@@ -81,6 +108,9 @@ Rails/Pluck: # (new in 2.7)
 Rails/PluckInWhere: # (new in 2.7)
   Enabled: true
 
+Rails/RedundantPresenceValidationOnBelongsTo: # new in 2.13
+  Enabled: true
+
 Rails/RedundantTravelBack: # new in 2.12
   Enabled: true
 
@@ -90,6 +120,9 @@ Rails/RenderInline: # (new in 2.7)
 Rails/RenderPlainText: # (new in 2.7)
   Enabled: true
 
+Rails/RootJoinChain: # new in 2.13
+  Enabled: true
+
 Rails/ShortI18n: # (new in 2.7)
   Enabled: true
 
@@ -97,6 +130,9 @@ Rails/SquishedSQLHeredocs: # (new in 2.8)
   Enabled: true
 
 Rails/TimeZoneAssignment: # (new in 2.10)
+  Enabled: true
+
+Rails/TransactionExitStatement: # new in 2.14
   Enabled: true
 
 Rails/UnusedIgnoredColumns: # new in 2.11
