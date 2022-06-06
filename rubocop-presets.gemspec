@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rubocop-rspec", "~> 2.11.0"
 
   spec.add_development_dependency "bundler", "~> 2.0"
-  spec.add_development_dependency "rake", "~> 12.3"
+  spec.add_development_dependency "rake", "~> 13.0"
 
   spec.post_install_message = '
     rubocop-presets Post-installation tasks:
