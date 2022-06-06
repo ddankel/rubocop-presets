@@ -5,7 +5,7 @@ require "rubocop_presets/version"
 Gem::Specification.new do |spec|
   spec.name = "rubocop-presets"
   spec.version = RubocopPresets::VERSION
-  spec.required_ruby_version = ">= 2.5.0"
+  spec.required_ruby_version = ">= 2.6.0"
   spec.authors = ["Dave Dankel"]
   spec.email = ["ddankel@gmail.com"]
 
@@ -13,6 +13,8 @@ Gem::Specification.new do |spec|
   spec.description = "A set of default Rubocop settings to use across projects."
   spec.homepage = "https://github.com/ddankel/rubocop-presets"
   spec.license = "MIT"
+
+  spec.metadata = { "rubygems_mfa_required" => "true" }
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -23,11 +25,11 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", "~> 1.22.0"
-  spec.add_dependency "rubocop-performance", "~> 1.11.0"
-  spec.add_dependency "rubocop-rails", "~> 2.12.0"
+  spec.add_dependency "rubocop", "~> 1.30.0"
+  spec.add_dependency "rubocop-performance", "~> 1.14.0"
+  spec.add_dependency "rubocop-rails", "~> 2.14.2"
   spec.add_dependency "rubocop-rake", "~> 0.6"
-  spec.add_dependency "rubocop-rspec", "~> 2.5.0"
+  spec.add_dependency "rubocop-rspec", "~> 2.11.0"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 12.3"
