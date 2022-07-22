@@ -53,6 +53,9 @@ Rails/CompactBlank: # new in 2.13
 Rails/DeprecatedActiveModelErrorsMethods: # new in 2.14
   Enabled: true
 
+Rails/DotSeparatedKeys: # new in 2.15
+  Enabled: true
+
 Rails/DuplicateAssociation: # new in 2.14
   Enabled: true
 
@@ -123,16 +126,25 @@ Rails/RenderPlainText: # (new in 2.7)
 Rails/RootJoinChain: # new in 2.13
   Enabled: true
 
+Rails/RootPublicPath: # new in 2.15
+  Enabled: true
+
 Rails/ShortI18n: # (new in 2.7)
   Enabled: true
 
 Rails/SquishedSQLHeredocs: # (new in 2.8)
   Enabled: true
 
+Rails/StripHeredoc: # new in 2.15
+  Enabled: true
+
 Rails/TimeZoneAssignment: # (new in 2.10)
   Enabled: true
 
 Rails/TransactionExitStatement: # new in 2.14
+  Enabled: true
+
+Rails/ToFormattedS: # new in 2.15
   Enabled: true
 
 Rails/UnusedIgnoredColumns: # new in 2.11
