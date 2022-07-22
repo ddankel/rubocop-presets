@@ -76,9 +76,6 @@ AllCops:
 
 #################### Gemspec ##########################
 
-Gemspec/DateAssignment:
-  Enabled: true
-
 Gemspec/DeprecatedAttributeAssignment: # new in 1.30
   Enabled: true
 
@@ -88,6 +85,12 @@ Gemspec/RequireMFA: # new in 1.23
 #################### Layout ###########################
 
 Layout/BeginEndAlignment: # (new in 0.91)
+  Enabled: true
+
+Layout/LineContinuationLeadingSpace: # new in 1.31
+  Enabled: true
+
+Layout/LineContinuationSpacing: # new in 1.31
   Enabled: true
 
 Layout/EmptyLines:
@@ -161,6 +164,9 @@ Lint/BinaryOperatorWithIdenticalOperands: # (new in 0.89)
 Lint/ConstantDefinitionInBlock: # (new in 0.91)
   Enabled: true
 
+Lint/ConstantOverwrittenInRescue: # new in 1.31
+  Enabled: true
+
 Lint/DeprecatedConstants: # (new in 1.8)
   Enabled: true
 
@@ -218,6 +224,9 @@ Lint/MissingSuper: # (new in 0.89)
 Lint/MixedRegexpCaptureTypes: # (new in 0.85)
   Enabled: true
 
+Lint/NonAtomicFileOperation: # new in 1.31
+  Enabled: true
+
 Lint/NoReturnInBeginEndBlocks: # (new in 1.2)
   Enabled: true
 
@@ -240,6 +249,9 @@ Lint/RedundantSafeNavigation: # (new in 0.93)
   Enabled: true
 
 Lint/RefinementImportMethods: # new in 1.27
+  Enabled: true
+
+Lint/RequireRangeParentheses: # new in 1.32
   Enabled: true
 
 Lint/RequireRelativeSelfPath: # new in 1.22
@@ -359,6 +371,9 @@ Style/CombinableLoops: # (new in 0.90)
   Enabled: true
 
 Style/DocumentDynamicEvalDefinition: # (new in 1.1)
+  Enabled: true
+
+Style/EmptyHeredoc: # new in 1.32
   Enabled: true
 
 Style/EmptyMethod:
