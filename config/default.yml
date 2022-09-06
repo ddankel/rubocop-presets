@@ -440,6 +440,9 @@ Style/Lambda:
   Exclude:
     - app/models/**/*.rb
 
+Style/MagicCommentFormat: # new in 1.35
+  Enabled: true
+
 Style/MapCompactWithConditionalBlock: # new in 1.30
   Enabled: true
 
