@@ -28,10 +28,16 @@ AllCops:
   # as the default.
   TargetRailsVersion: ~
 
+Rails/ActionControllerFlashBeforeRender: # new in 2.16
+  Enabled: true
+
 Rails/ActionControllerTestCase: # new in 2.14
   Enabled: true
 
 Rails/ActiveRecordCallbacksOrder: # (new in 2.7)
+  Enabled: true
+
+Rails/ActiveSupportOnLoad: # new in 2.16
   Enabled: true
 
 Rails/AddColumnIndex: # new in 2.11
@@ -81,6 +87,9 @@ Rails/FilePath:
 Rails/FindById: # (new in 2.7)
   Enabled: true
 
+Rails/FreezeTime: # new in 2.16
+  Enabled: true
+
 Rails/I18nLazyLookup: # new in 2.14
   Enabled: false
 
@@ -126,6 +135,9 @@ Rails/RenderPlainText: # (new in 2.7)
 Rails/RootJoinChain: # new in 2.13
   Enabled: true
 
+Rails/RootPathnameMethods: # new in 2.16
+  Enabled: true
+
 Rails/RootPublicPath: # new in 2.15
   Enabled: true
 
@@ -141,6 +153,12 @@ Rails/StripHeredoc: # new in 2.15
 Rails/TimeZoneAssignment: # (new in 2.10)
   Enabled: true
 
+Rails/TopLevelHashWithIndifferentAccess: # new in 2.16
+  Enabled: true
+
+Rails/ToSWithArgument: # new in 2.16
+  Enabled: true
+
 Rails/TransactionExitStatement: # new in 2.14
   Enabled: true
 
@@ -154,6 +172,9 @@ Rails/WhereEquals: # (new in 2.9)
   Enabled: true
 
 Rails/WhereExists: # (new in 2.7)
+  Enabled: true
+
+Rails/WhereMissing: # new in 2.16
   Enabled: true
 
 Rails/WhereNot: # (new in 2.8)
