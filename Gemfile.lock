@@ -6,7 +6,7 @@ PATH
       rubocop-performance (>= 1.14, < 1.16)
       rubocop-rails (>= 2.14.2, < 2.18.0)
       rubocop-rake (~> 0.6)
-      rubocop-rspec (>= 2.11, < 2.14)
+      rubocop-rspec (>= 2.11, < 2.15)
 
 GEM
   remote: https://rubygems.org/
@@ -52,7 +52,7 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.13.1)
+    rubocop-rspec (2.14.2)
       rubocop (~> 1.33)
     ruby-progressbar (1.11.0)
     tzinfo (2.0.5)
