@@ -179,6 +179,9 @@ Lint/DuplicateElsifCondition: # (new in 0.88)
 Lint/DuplicateBranch: # (new in 1.3)
   Enabled: true
 
+Lint/DuplicateMagicComment: # new in 1.37
+  Enabled: true
+
 Lint/DuplicateRegexpCharacterClassElement: # (new in 1.1)
   Enabled: true
 
@@ -481,6 +484,9 @@ Style/ObjectThen: # new in 1.28
 Style/OpenStructUse: # new in 1.23
   Enabled: true
 
+Style/OperatorMethodCall: # new in 1.37
+  Enabled: true
+
 Style/OptionalBooleanParameter: # (new in 0.89)
   Enabled: true
 
@@ -489,6 +495,9 @@ Style/QuotedSymbols: # (new in 1.16)
   EnforcedStyle: double_quotes
 
 Style/RedundantArgument: # (new in 1.4)
+  Enabled: true
+
+Style/RedundantStringEscape: # new in 1.37
   Enabled: true
 
 Style/RedundantAssignment: # (new in 0.87)
