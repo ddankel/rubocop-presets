@@ -503,6 +503,9 @@ Style/RedundantStringEscape: # new in 1.37
 Style/RedundantAssignment: # (new in 0.87)
   Enabled: true
 
+Style/RedundantEach: # new in 1.38
+  Enabled: true
+
 Style/RedundantFetchBlock: # (new in 0.86)
   Enabled: true
 
