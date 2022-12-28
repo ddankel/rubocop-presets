@@ -351,6 +351,9 @@ Security/IoMethods: # new in 1.22
 
 #################### Style ###############################
 
+Style/ArrayIntersect: # new in 1.40
+  Enabled: true
+
 Style/ArgumentsForwarding: # (new in 1.1)
   Enabled: true
 
@@ -371,6 +374,9 @@ Style/ClassEqualityComparison: # (new in 0.93)
   Enabled: true
 
 Style/CombinableLoops: # (new in 0.90)
+  Enabled: true
+
+Style/ConcatArrayLiterals: # new in 1.41
   Enabled: true
 
 Style/DocumentDynamicEvalDefinition: # (new in 1.1)
@@ -495,6 +501,12 @@ Style/QuotedSymbols: # (new in 1.16)
   EnforcedStyle: double_quotes
 
 Style/RedundantArgument: # (new in 1.4)
+  Enabled: true
+
+Style/RedundantConstantBase: # new in 1.40
+  Enabled: true
+
+Style/RedundantDoubleSplatHashBraces: # new in 1.41
   Enabled: true
 
 Style/RedundantStringEscape: # new in 1.37
