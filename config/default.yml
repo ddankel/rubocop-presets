@@ -458,6 +458,12 @@ Style/MapCompactWithConditionalBlock: # new in 1.30
 Style/MapToHash: # new in 1.24
   Enabled: true
 
+Style/MapToSet: # new in 1.42
+  Enabled: true
+
+Style/MinMaxComparison: # new in 1.42
+  Enabled: true
+
 Style/MixinGrouping:
   EnforcedStyle: grouped
 
@@ -571,3 +577,6 @@ Style/WordArray:
   EnforcedStyle: brackets
   Exclude:
     - config/application.rb
+
+Style/YodaExpression: # new in 1.42
+  Enabled: true
