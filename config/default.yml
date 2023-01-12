@@ -579,4 +579,4 @@ Style/WordArray:
     - config/application.rb
 
 Style/YodaExpression: # new in 1.42
-  Enabled: true
+  Enabled: false
