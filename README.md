@@ -7,7 +7,7 @@ Note that we each version is locked to a specific Rubocop version, as Rubocop's 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rubocop-presets', git: 'https://github.com/ddankel/rubocop-presets'
+gem 'rubocop-presets', git: 'https://github.com/<this_repo_url_path>'
 ```
 
 And then execute:
