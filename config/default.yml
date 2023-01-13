@@ -293,6 +293,9 @@ Lint/UnreachableLoop: # (new in 0.89)
 Lint/UselessMethodDefinition: # (new in 0.90)
   Enabled: true
 
+Lint/UselessRescue: # new in 1.43
+  Enabled: true
+
 Lint/UselessTimes: # (new in 0.91)
   Enabled: true
 
@@ -579,4 +582,4 @@ Style/WordArray:
     - config/application.rb
 
 Style/YodaExpression: # new in 1.42
-  Enabled: true
+  Enabled: false
