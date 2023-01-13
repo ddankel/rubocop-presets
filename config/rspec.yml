@@ -59,6 +59,9 @@ RSpec/VerifiedDoubleReference: # new in 2.10.0
 
 ########## RSpec/Capybara/*
 
+RSpec/Capybara/MatchStyle: # new in 2.17
+  Enabled: true
+
 RSpec/Capybara/NegationMatcher: # new in 2.14
   Enabled: true
 
@@ -81,6 +84,9 @@ RSpec/Rails/HaveHttpStatus: # new in 2.12
 
 RSpec/Rails/InferredSpecType: # new in 2.14
   Enabled: false
+
+RSpec/Rails/MinitestAssertions: # new in 2.17
+  Enabled: true
 
 ######### RSpec/FactoryBot/*
 
