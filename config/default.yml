@@ -79,6 +79,9 @@ AllCops:
 Gemspec/DeprecatedAttributeAssignment: # new in 1.30
   Enabled: true
 
+Gemfile/DevelopmentDependencies:
+  Enabled: true
+
 Gemspec/RequireMFA: # new in 1.23
   Enabled: true
 
@@ -377,6 +380,9 @@ Style/ClassEqualityComparison: # (new in 0.93)
   Enabled: true
 
 Style/CombinableLoops: # (new in 0.90)
+  Enabled: true
+
+Style/ComparableClamp:
   Enabled: true
 
 Style/ConcatArrayLiterals: # new in 1.41
