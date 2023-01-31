@@ -79,7 +79,7 @@ AllCops:
 Gemspec/DeprecatedAttributeAssignment: # new in 1.30
   Enabled: true
 
-Gemfile/DevelopmentDependencies:
+Gemspec/DevelopmentDependencies:
   Enabled: true
 
 Gemspec/RequireMFA: # new in 1.23
