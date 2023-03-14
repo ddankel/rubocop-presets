@@ -139,6 +139,9 @@ Rails/RenderInline: # (new in 2.7)
 Rails/RenderPlainText: # (new in 2.7)
   Enabled: true
 
+Rails/ResponseParsedBody: # new in 2.18
+  Enabled: true
+
 Rails/RootJoinChain: # new in 2.13
   Enabled: true
 
