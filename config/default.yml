@@ -332,6 +332,9 @@ Metrics/ClassLength:
   Exclude:
     - config/routes.rb
 
+Metrics/CollectionLiteralLength: # new in 1.47
+  Enabled: true
+
 Metrics/MethodLength:
   CountAsOne:
     - array
@@ -388,6 +391,9 @@ Style/ComparableClamp:
 Style/ConcatArrayLiterals: # new in 1.41
   Enabled: true
 
+Style/DirEmpty: # new in 1.48
+  Enabled: true
+
 Style/DocumentDynamicEvalDefinition: # (new in 1.1)
   Enabled: true
 
@@ -410,6 +416,9 @@ Style/ExponentialNotation:
   Enabled: true
 
 Style/FetchEnvVar: # new in 1.28
+  Enabled: true
+
+Style/FileEmpty: # new in 1.48
   Enabled: true
 
 Style/FileRead: # new in 1.24
@@ -537,6 +546,9 @@ Style/RedundantFetchBlock: # (new in 0.86)
   Enabled: true
 
 Style/RedundantFileExtensionInRequire: # (new in 0.88)
+  Enabled: true
+
+Style/RedundantHeredocDelimiterQuotes: # new in 1.45
   Enabled: true
 
 Style/RedundantInitialize: # new in 1.27
