@@ -6,7 +6,7 @@ PATH
       rubocop-performance (>= 1.15, < 1.17)
       rubocop-rails (>= 2.17, < 2.19)
       rubocop-rake (~> 0.6.0)
-      rubocop-rspec (~> 2.17.0)
+      rubocop-rspec (>= 2.17, < 2.20)
 
 GEM
   remote: https://rubygems.org/
@@ -54,10 +54,12 @@ GEM
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml (>= 3.2.5, < 4.0)
+      rubocop (~> 1.41)
       rubocop-ast (>= 1.26.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.27.0)
+    rubocop-capybara (2.17.1)
       parser (>= 3.2.1.0)
     rubocop-performance (1.16.0)
       rubocop (>= 1.7.0, < 2.0)
@@ -68,8 +70,9 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     rubocop-rake (0.6.0)
       rubocop (~> 1.0)
-    rubocop-rspec (2.17.0)
+    rubocop-rspec (2.19.0)
       rubocop (~> 1.33)
+      rubocop-capybara (~> 2.17)
     ruby-progressbar (1.13.0)
     solargraph (0.48.0)
       backport (~> 1.2)
