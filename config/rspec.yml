@@ -48,6 +48,12 @@ RSpec/NoExpectationExample: # new in 2.13
 RSpec/PendingWithoutReason: # new in 2.16
   Enabled: true
 
+RSpec/RedundantAround: # new in 2.19
+  Enabled: true
+
+RSpec/SkipBlockInsideExample: # new in 2.19
+  Enabled: true
+
 RSpec/SortMetadata: # new in 2.14
   Enabled: true
 
@@ -59,24 +65,24 @@ RSpec/VerifiedDoubleReference: # new in 2.10.0
 
 ########## RSpec/Capybara/*
 
-RSpec/Capybara/MatchStyle: # new in 2.17
+Capybara/MatchStyle: # new in 2.17
   Enabled: true
 
-RSpec/Capybara/NegationMatcher: # new in 2.14
+Capybara/NegationMatcher: # new in 2.14
   Enabled: true
 
-RSpec/Capybara/SpecificActions: # new in 2.14
+Capybara/SpecificActions: # new in 2.14
   Enabled: true
 
-RSpec/Capybara/SpecificFinders: # new in 2.13
+Capybara/SpecificFinders: # new in 2.13
   Enabled: true
 
-RSpec/Capybara/SpecificMatcher: # new in 2.12
+Capybara/SpecificMatcher: # new in 2.12
   Enabled: true
 
 ######### RSpec/Rails/*
 
-RSpec/Rails/AvoidSetupHook: # new in 2.4
+RSpec/Rails/AvoidSetupHook: # new in 2.4bund
   Enabled: true
 
 RSpec/Rails/HaveHttpStatus: # new in 2.12
@@ -86,6 +92,9 @@ RSpec/Rails/InferredSpecType: # new in 2.14
   Enabled: false
 
 RSpec/Rails/MinitestAssertions: # new in 2.17
+  Enabled: true
+
+RSpec/Rails/TravelAround: # new in 2.19
   Enabled: true
 
 ######### RSpec/FactoryBot/*
