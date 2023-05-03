@@ -4,7 +4,7 @@ Note that we each version is locked to a specific Rubocop version, as Rubocop's 
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's `Gemfile`:
 
 ```ruby
 gem 'rubocop-presets', git: 'https://github.com/<this_repo_url_path>'
@@ -14,10 +14,6 @@ And then execute:
 
     $ bundle install
 
-Finally copy the config files into the local project using the provided generator
-
-    $ rails g rubocop:presets
-
 ## Usage
 
 Add a `.rubocop.yml` to your project with the following contents:
@@ -25,29 +21,35 @@ Add a `.rubocop.yml` to your project with the following contents:
 **For Ruby**
 
 ```yaml
-inherit_from:
-  - config/rubocop/default.yml
-  - config/rubocop/rails.yml
-  - config/rubocop/rake.yml
-  - config/rubocop/rspec.yml
+inherit_gem:
+  rubocop-presets: config/default.yml
+```
 
-inherit_mode:
-  merge:
-    - Exclude
+**For Rails**
+
+```yaml
+inherit_gem:
+  rubocop-presets:
+    - config/default.yml
+    - config/ext/rails.yml
+```
+
+**For RSpec**
+
+```yaml
+inherit_gem:
+  rubocop-presets:
+    - config/default.yml
+    - config/ext/rspec.yml
 ```
 
 Any per-project rules can then be defined in the `.rubocop.yml`:
 
 ```yaml
-inherit_from:
-  - config/rubocop/default.yml
-  - config/rubocop/rails.yml
-  - config/rubocop/rake.yml
-  - config/rubocop/rspec.yml
-
-inherit_mode:
-  merge:
-    - Exclude
+inherit_gem:
+  rubocop-presets:
+    - config/default.yml
+    - config/ext/rails.yml
 
 AllCops:
   Exclude:
@@ -56,6 +58,17 @@ AllCops:
 Layout/MultilineArrayLineBreaks:
   Enabled: true
 ```
+
+It also might be desired to set `inherit_mode`, which specifies which configuration keys that have
+array values should be merged together instead of overriding the inherited value:
+
+```yaml
+inherit_mode:
+  merge:
+    - Exclude
+```
+
+> **NOTE**: For instructions on including the rubocop configs directly in your project instead of inheriting from this gem, see the [alternative integration doc](readme/alternative_integration.md).
 
 ### Executing Rubocop on demand
 
