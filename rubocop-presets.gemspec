@@ -5,7 +5,7 @@ require "rubocop_presets/version"
 Gem::Specification.new do |spec|
   spec.name = "rubocop-presets"
   spec.version = RubocopPresets::VERSION
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.7.0"
   spec.authors = ["Dave Dankel"]
   spec.email = ["ddankel@gmail.com"]
 
@@ -25,11 +25,11 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rubocop", ">= 1.43", "< 1.49"
-  spec.add_dependency "rubocop-performance", ">= 1.15", "< 1.17"
-  spec.add_dependency "rubocop-rails", ">= 2.17", "< 2.19"
+  spec.add_dependency "rubocop", ">= 1.43", "< 1.51"
+  spec.add_dependency "rubocop-performance", ">= 1.15", "< 1.18"
+  spec.add_dependency "rubocop-rails", ">= 2.17", "< 2.20"
   spec.add_dependency "rubocop-rake", "~> 0.6.0"
-  spec.add_dependency "rubocop-rspec", ">= 2.17", "< 2.20"
+  spec.add_dependency "rubocop-rspec", ">= 2.17", "< 2.21"
 
   spec.post_install_message = '
     rubocop-presets Post-installation tasks:
