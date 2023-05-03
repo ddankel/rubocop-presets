@@ -15,6 +15,9 @@ RSpec:
     - _spec.rb
     - "(?:^|/)spec/"
 
+RSpec/BeEmpty: # new in 2.20
+  Enabled: true
+
 RSpec/BeEq: # new in 2.9.0
   Enabled: true
 
@@ -25,6 +28,9 @@ RSpec/ChangeByZero: # new in 2.11.0
   Enabled: true
 
 RSpec/ClassCheck: # new in 2.13
+  Enabled: true
+
+RSpec/ContainExactly: # new in 2.19
   Enabled: true
 
 RSpec/DuplicatedMetadata: # new in 2.16
@@ -40,6 +46,13 @@ RSpec/ExcessiveDocstringSpacing: # new in 2.5
   Enabled: true
 
 RSpec/IdenticalEqualityAssertion: # new in 2.4
+  Enabled: true
+
+RSpec/IndexedLet: # new in 2.20
+  Enabled: true
+  Max: 3
+
+RSpec/MatchArray: # new in 2.19
   Enabled: true
 
 RSpec/NoExpectationExample: # new in 2.13
