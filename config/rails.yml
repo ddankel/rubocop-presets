@@ -160,6 +160,9 @@ Rails/SquishedSQLHeredocs: # (new in 2.8)
 Rails/StripHeredoc: # new in 2.15
   Enabled: true
 
+Rails/ThreeStateBooleanColumn: # new in 2.19
+  Enabled: true
+
 Rails/TimeZoneAssignment: # (new in 2.10)
   Enabled: true
 
