@@ -182,6 +182,9 @@ Lint/DuplicateElsifCondition: # (new in 0.88)
 Lint/DuplicateBranch: # (new in 1.3)
   Enabled: true
 
+Lint/DuplicateMatchPattern: # new in 1.50
+  Enabled: true
+
 Lint/DuplicateMagicComment: # new in 1.37
   Enabled: true
 
@@ -391,6 +394,9 @@ Style/ComparableClamp:
 Style/ConcatArrayLiterals: # new in 1.41
   Enabled: true
 
+Style/DataInheritance: # new in 1.49
+  Enabled: true
+
 Style/DirEmpty: # new in 1.48
   Enabled: true
 
@@ -552,6 +558,9 @@ Style/RedundantHeredocDelimiterQuotes: # new in 1.45
   Enabled: true
 
 Style/RedundantInitialize: # new in 1.27
+  Enabled: true
+
+Style/RedundantLineContinuation: # new in 1.49
   Enabled: true
 
 Style/RedundantRegexpCharacterClass: # (new in 0.85)
