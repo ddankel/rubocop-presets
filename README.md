@@ -31,7 +31,7 @@ inherit_gem:
 inherit_gem:
   rubocop-presets:
     - config/default.yml
-    - config/ext/rails.yml
+    - config/rails.yml
 ```
 
 **For RSpec**
@@ -40,7 +40,7 @@ inherit_gem:
 inherit_gem:
   rubocop-presets:
     - config/default.yml
-    - config/ext/rspec.yml
+    - config/rspec.yml
 ```
 
 Any per-project rules can then be defined in the `.rubocop.yml`:
@@ -49,7 +49,7 @@ Any per-project rules can then be defined in the `.rubocop.yml`:
 inherit_gem:
   rubocop-presets:
     - config/default.yml
-    - config/ext/rails.yml
+    - config/rails.yml
 
 AllCops:
   Exclude:
