@@ -533,10 +533,16 @@ Style/QuotedSymbols: # (new in 1.16)
 Style/RedundantArgument: # (new in 1.4)
   Enabled: true
 
+Style/RedundantArrayConstructor: # new in 1.52
+  Enabled: true
+
 Style/RedundantConstantBase: # new in 1.40
   Enabled: true
 
 Style/RedundantDoubleSplatHashBraces: # new in 1.41
+  Enabled: true
+
+Style/RedundantFilterChain: # new in 1.52
   Enabled: true
 
 Style/RedundantStringEscape: # new in 1.37
@@ -566,6 +572,9 @@ Style/RedundantLineContinuation: # new in 1.49
 Style/RedundantRegexpCharacterClass: # (new in 0.85)
   Enabled: true
 
+Style/RedundantRegexpConstructor: # new in 1.52
+  Enabled: true
+
 Style/RedundantRegexpEscape: # (new in 0.85)
   Enabled: true
 
@@ -573,6 +582,9 @@ Style/RedundantSelfAssignment: # (new in 0.90)
   Enabled: true
 
 Style/RedundantSelfAssignmentBranch: # new in 1.19
+  Enabled: true
+
+Style/ExactRegexpMatch: # new in 1.51
   Enabled: true
 
 Style/SelectByRegexp: # new in 1.22
