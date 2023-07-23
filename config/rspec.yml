@@ -110,13 +110,22 @@ RSpec/Rails/MinitestAssertions: # new in 2.17
 RSpec/Rails/TravelAround: # new in 2.19
   Enabled: true
 
-######### RSpec/FactoryBot/*
+######### FactoryBot/*
 
-RSpec/FactoryBot/ConsistentParenthesesStyle: # new in 2.14
+FactoryBot/AssociationStyle: # new in 2.23
   Enabled: true
 
-RSpec/FactoryBot/FactoryNameStyle: # new in 2.16
+FactoryBot/ConsistentParenthesesStyle: # new in 2.14
   Enabled: true
 
-RSpec/FactoryBot/SyntaxMethods: # new in 2.7
+FactoryBot/FactoryAssociationWithStrategy: # new in 2.23
+  Enabled: true
+
+FactoryBot/FactoryNameStyle: # new in 2.16
+  Enabled: true
+
+FactoryBot/RedundantFactoryOption: # new in 2.23
+  Enabled: true
+
+FactoryBot/SyntaxMethods: # new in 2.7
   Enabled: true
