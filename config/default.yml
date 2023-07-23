@@ -230,6 +230,9 @@ Lint/LambdaWithoutLiteralBlock: #( new in 1.8)
 Lint/MissingSuper: # (new in 0.89)
   Enabled: false
 
+Lint/MixedCaseRange: # new in 1.53
+  Enabled: true
+
 Lint/MixedRegexpCaptureTypes: # (new in 0.85)
   Enabled: true
 
@@ -252,6 +255,9 @@ Lint/RaiseException:
   Enabled: true
 
 Lint/RedundantDirGlobSort: # (new in 1.8)
+  Enabled: true
+
+Lint/RedundantRegexpQuantifiers: # new in 1.53
   Enabled: true
 
 Lint/RedundantSafeNavigation: # (new in 0.93)
@@ -539,6 +545,9 @@ Style/RedundantArrayConstructor: # new in 1.52
 Style/RedundantConstantBase: # new in 1.40
   Enabled: true
 
+Style/RedundantCurrentDirectoryInPath: # new in 1.53
+  Enabled: true
+
 Style/RedundantDoubleSplatHashBraces: # new in 1.41
   Enabled: true
 
@@ -569,6 +578,9 @@ Style/RedundantInitialize: # new in 1.27
 Style/RedundantLineContinuation: # new in 1.49
   Enabled: true
 
+Style/RedundantRegexpArgument: # new in 1.53
+  Enabled: true
+
 Style/RedundantRegexpCharacterClass: # (new in 0.85)
   Enabled: true
 
@@ -582,6 +594,9 @@ Style/RedundantSelfAssignment: # (new in 0.90)
   Enabled: true
 
 Style/RedundantSelfAssignmentBranch: # new in 1.19
+  Enabled: true
+
+Style/ReturnNilInPredicateMethodDefinition: # new in 1.53
   Enabled: true
 
 Style/ExactRegexpMatch: # new in 1.51
@@ -619,6 +634,9 @@ Style/WordArray:
   EnforcedStyle: brackets
   Exclude:
     - config/application.rb
+
+Style/YAMLFileRead: # new in 1.53
+  Enabled: true
 
 Style/YodaExpression: # new in 1.42
   Enabled: false
