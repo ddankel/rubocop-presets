@@ -61,6 +61,9 @@ RSpec/NoExpectationExample: # new in 2.13
 RSpec/PendingWithoutReason: # new in 2.16
   Enabled: true
 
+RSpec/ReceiveMessages: # new in 2.23
+  Enabled: true
+
 RSpec/RedundantAround: # new in 2.19
   Enabled: true
 
@@ -105,6 +108,9 @@ RSpec/Rails/InferredSpecType: # new in 2.14
   Enabled: false
 
 RSpec/Rails/MinitestAssertions: # new in 2.17
+  Enabled: true
+
+RSpec/Rails/NegationBeValid: # new in 2.23
   Enabled: true
 
 RSpec/Rails/TravelAround: # new in 2.19
