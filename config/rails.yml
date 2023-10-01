@@ -60,6 +60,9 @@ Rails/AttributeDefaultBlockValue: # (new in 2.9)
 Rails/CompactBlank: # new in 2.13
   Enabled: true
 
+Rails/DangerousColumnNames: # new in 2.21
+  Enabled: true
+
 Rails/DeprecatedActiveModelErrorsMethods: # new in 2.14
   Enabled: true
 
@@ -127,6 +130,9 @@ Rails/Pluck: # (new in 2.7)
 Rails/PluckInWhere: # (new in 2.7)
   Enabled: true
 
+Rails/RedundantActiveRecordAllMethod: # new in 2.21
+  Enabled: true
+
 Rails/RedundantPresenceValidationOnBelongsTo: # new in 2.13
   Enabled: true
 
@@ -149,6 +155,9 @@ Rails/RootPathnameMethods: # new in 2.16
   Enabled: true
 
 Rails/RootPublicPath: # new in 2.15
+  Enabled: true
+
+Rails/SelectMap: # new in 2.21
   Enabled: true
 
 Rails/ShortI18n: # (new in 2.7)
@@ -179,6 +188,9 @@ Rails/ToFormattedS: # new in 2.15
   Enabled: true
 
 Rails/UnusedIgnoredColumns: # new in 2.11
+  Enabled: true
+
+Rails/UnusedRenderContent: # new in 2.21
   Enabled: true
 
 Rails/WhereEquals: # (new in 2.9)
