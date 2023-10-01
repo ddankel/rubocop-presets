@@ -36,6 +36,12 @@ RSpec/ContainExactly: # new in 2.19
 RSpec/DuplicatedMetadata: # new in 2.16
   Enabled: true
 
+RSpec/EmptyMetadata: # new in 2.24
+  Enabled: true
+
+RSpec/Eq: # new in 2.24
+  Enabled: true
+
 RSpec/FactoryBot:
   Include:
     - spec/factories.rb
@@ -55,6 +61,9 @@ RSpec/IndexedLet: # new in 2.20
 RSpec/MatchArray: # new in 2.19
   Enabled: true
 
+RSpec/MetadataStyle: # new in 2.24
+  Enabled: true
+
 RSpec/NoExpectationExample: # new in 2.13
   Enabled: true
 
@@ -70,6 +79,12 @@ RSpec/RedundantAround: # new in 2.19
 RSpec/SkipBlockInsideExample: # new in 2.19
   Enabled: true
 
+RSpec/SpecFilePathFormat: # new in 2.24
+  Enabled: true
+
+RSpec/SpecFilePathSuffix: # new in 2.24
+  Enabled: true
+
 RSpec/SortMetadata: # new in 2.14
   Enabled: true
 
@@ -80,6 +95,9 @@ RSpec/VerifiedDoubleReference: # new in 2.10.0
   Enabled: true
 
 ########## RSpec/Capybara/*
+
+Capybara/ClickLinkOrButtonStyle: # new in 2.19
+  Enabled: true
 
 Capybara/MatchStyle: # new in 2.17
   Enabled: true
@@ -94,6 +112,12 @@ Capybara/SpecificFinders: # new in 2.13
   Enabled: true
 
 Capybara/SpecificMatcher: # new in 2.12
+  Enabled: true
+
+Capybara/RSpec/HaveSelector: # new in 2.19
+  Enabled: true
+
+Capybara/RSpec/PredicateMatcher: # new in 2.19
   Enabled: true
 
 ######### RSpec/Rails/*
