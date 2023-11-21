@@ -154,6 +154,9 @@ FactoryBot/FactoryAssociationWithStrategy: # new in 2.23
 FactoryBot/FactoryNameStyle: # new in 2.16
   Enabled: true
 
+FactoryBot/IdSequence: # new in <<next>>
+  Enabled: true
+
 FactoryBot/RedundantFactoryOption: # new in 2.23
   Enabled: true
 
