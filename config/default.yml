@@ -608,6 +608,9 @@ Style/SelectByRegexp: # new in 1.22
 Style/SingleArgumentDig: # (new in 0.89)
   Enabled: true
 
+Style/SingleLineDoEndBlock: # new in 1.57
+  Enabled: true
+
 Style/SlicingWithRange: # (new in 0.83)
   Enabled: true
 
