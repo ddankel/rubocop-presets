@@ -221,10 +221,16 @@ Lint/HashCompareByIdentity: # (new in 0.93)
 Lint/IdentityComparison: # (new in 0.91)
   Enabled: true
 
+Lint/ItWithoutArgumentsInBlock: # new in 1.59
+  Enabled: true
+
 Lint/IncompatibleIoSelectWithFiberScheduler: # new in 1.21
   Enabled: true
 
 Lint/LambdaWithoutLiteralBlock: #( new in 1.8)
+  Enabled: true
+
+Lint/LiteralAssignmentInCondition: # new in 1.58
   Enabled: true
 
 Lint/MissingSuper: # (new in 0.89)
@@ -626,6 +632,9 @@ Style/StringConcatenation: # (new in 0.89)
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
+
+Style/SuperWithArgsParentheses: # new in 1.58
+  Enabled: true
 
 Style/SwapValues: # (new in 1.1)
   Enabled: true
