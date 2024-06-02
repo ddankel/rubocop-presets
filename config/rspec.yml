@@ -36,6 +36,9 @@ RSpec/ContainExactly: # new in 2.19
 RSpec/DuplicatedMetadata: # new in 2.16
   Enabled: true
 
+RSpec/EmptyOutput: # new in 2.29
+  Enabled: true
+
 RSpec/EmptyMetadata: # new in 2.24
   Enabled: true
 
@@ -58,6 +61,9 @@ RSpec/IndexedLet: # new in 2.20
   Enabled: true
   Max: 3
 
+RSpec/IsExpectedSpecify: # new in 2.27
+  Enabled: true
+
 RSpec/MatchArray: # new in 2.19
   Enabled: true
 
@@ -76,6 +82,15 @@ RSpec/ReceiveMessages: # new in 2.23
 RSpec/RedundantAround: # new in 2.19
   Enabled: true
 
+RSpec/RedundantPredicateMatcher: # new in 2.26
+  Enabled: true
+
+RSpec/RemoveConst: # new in 2.26
+  Enabled: true
+
+RSpec/RepeatedSubjectCall: # new in 2.27
+  Enabled: true
+
 RSpec/SkipBlockInsideExample: # new in 2.19
   Enabled: true
 
@@ -91,6 +106,9 @@ RSpec/SortMetadata: # new in 2.14
 RSpec/SubjectDeclaration: # new in 2.5
   Enabled: true
 
+RSpec/UndescriptiveLiteralsDescription: # new in 2.29
+  Enabled: true
+
 RSpec/VerifiedDoubleReference: # new in 2.10.0
   Enabled: true
 
@@ -103,6 +121,9 @@ Capybara/MatchStyle: # new in 2.17
   Enabled: true
 
 Capybara/NegationMatcher: # new in 2.14
+  Enabled: true
+
+Capybara/RedundantWithinFind: # new in 2.20
   Enabled: true
 
 Capybara/SpecificActions: # new in 2.14
@@ -120,24 +141,24 @@ Capybara/RSpec/HaveSelector: # new in 2.19
 Capybara/RSpec/PredicateMatcher: # new in 2.19
   Enabled: true
 
-######### RSpec/Rails/*
+######### RSpecRails/*
 
-RSpec/Rails/AvoidSetupHook: # new in 2.4bund
+RSpecRails/AvoidSetupHook: # new in 2.4bund
   Enabled: true
 
-RSpec/Rails/HaveHttpStatus: # new in 2.12
+RSpecRails/HaveHttpStatus: # new in 2.12
   Enabled: true
 
-RSpec/Rails/InferredSpecType: # new in 2.14
+RSpecRails/InferredSpecType: # new in 2.14
   Enabled: false
 
-RSpec/Rails/MinitestAssertions: # new in 2.17
+RSpecRails/MinitestAssertions: # new in 2.17
   Enabled: true
 
-RSpec/Rails/NegationBeValid: # new in 2.23
+RSpecRails/NegationBeValid: # new in 2.23
   Enabled: true
 
-RSpec/Rails/TravelAround: # new in 2.19
+RSpecRails/TravelAround: # new in 2.19
   Enabled: true
 
 ######### FactoryBot/*
@@ -146,6 +167,9 @@ FactoryBot/AssociationStyle: # new in 2.23
   Enabled: true
 
 FactoryBot/ConsistentParenthesesStyle: # new in 2.14
+  Enabled: true
+
+FactoryBot/ExcessiveCreateList: # new in 2.25
   Enabled: true
 
 FactoryBot/FactoryAssociationWithStrategy: # new in 2.23

@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rubocop-performance", ">= 1.15", "< 1.22"
   spec.add_dependency "rubocop-rails", ">= 2.17", "< 2.26"
   spec.add_dependency "rubocop-rake", "~> 0.6.0"
-  spec.add_dependency "rubocop-rspec", ">= 2.17", "< 2.26"
+  spec.add_dependency "rubocop-rspec", ">= 2.17", "< 2.30"
 
   spec.post_install_message = '
     rubocop-presets Post-installation tasks:
