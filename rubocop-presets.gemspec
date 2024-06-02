@@ -5,7 +5,7 @@ require "rubocop_presets/version"
 Gem::Specification.new do |spec|
   spec.name = "rubocop-presets"
   spec.version = RubocopPresets::VERSION
-  spec.required_ruby_version = ">= 2.7.0"
+  spec.required_ruby_version = ">= 3.0"
   spec.authors = ["Dave Dankel"]
   spec.email = ["ddankel@gmail.com"]
 
