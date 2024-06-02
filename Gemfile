@@ -7,6 +7,6 @@ gemspec
 
 group :development do
   gem "bundler", "~> 2.0"
-  gem "rake", "~> 13.1"
+  gem "rake", "~> 13.2"
   gem "solargraph"
 end
