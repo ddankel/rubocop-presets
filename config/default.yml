@@ -76,6 +76,9 @@ AllCops:
 
 #################### Gemspec ##########################
 
+Gemspec/AddRuntimeDependency: # new in 1.65
+  Enabled: true
+
 Gemspec/DeprecatedAttributeAssignment: # new in 1.30
   Enabled: true
 
