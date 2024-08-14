@@ -5,6 +5,8 @@
 
 require:
   - rubocop-rspec
+  - rubocop-rspec_rails
+  - rubocop-factory_bot
 
 inherit_mode:
   merge:
@@ -45,12 +47,6 @@ RSpec/EmptyMetadata: # new in 2.24
 RSpec/Eq: # new in 2.24
   Enabled: true
 
-RSpec/FactoryBot:
-  Include:
-    - spec/factories.rb
-    - spec/factories/**/*.rb
-    - features/support/factories/**/*.rb
-
 RSpec/ExcessiveDocstringSpacing: # new in 2.5
   Enabled: true
 
@@ -74,6 +70,9 @@ RSpec/NoExpectationExample: # new in 2.13
   Enabled: true
 
 RSpec/PendingWithoutReason: # new in 2.16
+  Enabled: true
+
+RSpec/PredicateMatcher: # new in 2.19
   Enabled: true
 
 RSpec/ReceiveMessages: # new in 2.23
@@ -110,35 +109,6 @@ RSpec/UndescriptiveLiteralsDescription: # new in 2.29
   Enabled: true
 
 RSpec/VerifiedDoubleReference: # new in 2.10.0
-  Enabled: true
-
-########## RSpec/Capybara/*
-
-Capybara/ClickLinkOrButtonStyle: # new in 2.19
-  Enabled: true
-
-Capybara/MatchStyle: # new in 2.17
-  Enabled: true
-
-Capybara/NegationMatcher: # new in 2.14
-  Enabled: true
-
-Capybara/RedundantWithinFind: # new in 2.20
-  Enabled: true
-
-Capybara/SpecificActions: # new in 2.14
-  Enabled: true
-
-Capybara/SpecificFinders: # new in 2.13
-  Enabled: true
-
-Capybara/SpecificMatcher: # new in 2.12
-  Enabled: true
-
-Capybara/RSpec/HaveSelector: # new in 2.19
-  Enabled: true
-
-Capybara/RSpec/PredicateMatcher: # new in 2.19
   Enabled: true
 
 ######### RSpecRails/*
