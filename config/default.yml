@@ -320,6 +320,9 @@ Lint/UselessRescue: # new in 1.43
 Lint/UselessTimes: # (new in 0.91)
   Enabled: true
 
+Lint/UselessNumericOperation: # new in 1.66
+  Enabled: true
+
 Lint/UselessRuby2Keywords: # new in 1.23
   Enabled: true
 
@@ -564,6 +567,9 @@ Style/RedundantDoubleSplatHashBraces: # new in 1.41
   Enabled: true
 
 Style/RedundantFilterChain: # new in 1.52
+  Enabled: true
+
+Style/RedundantInterpolationUnfreeze: # new in 1.66
   Enabled: true
 
 Style/RedundantStringEscape: # new in 1.37
