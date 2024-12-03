@@ -80,6 +80,9 @@ AllCops:
 
 #################### Layout ###########################
 
+Layout/EmptyLines:
+  Enabled: false
+
 Layout/EmptyLinesAroundClassBody:
   EnforcedStyle: empty_lines
 
