@@ -213,6 +213,9 @@ Style/QuotedSymbols: # (new in 1.16)
   Enabled: true
   EnforcedStyle: double_quotes
 
+Style/SafeNavigationChainLength:
+  Enabled: false
+
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
