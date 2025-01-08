@@ -5,7 +5,7 @@ PATH
       rubocop (>= 1.43, < 1.70)
       rubocop-factory_bot (>= 2.26.1)
       rubocop-performance (>= 1.15, < 1.24)
-      rubocop-rails (>= 2.17, < 2.28)
+      rubocop-rails (>= 2.17, < 2.29)
       rubocop-rake (~> 0.6.0)
       rubocop-rspec (>= 2.17, < 3.3)
       rubocop-rspec_rails (>= 2.30.0)
@@ -13,23 +13,26 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.1.4.2)
+    activesupport (7.1.5.1)
       base64
+      benchmark (>= 0.3)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
       connection_pool (>= 2.2.5)
       drb
       i18n (>= 1.6, < 2)
+      logger (>= 1.4.2)
       minitest (>= 5.1)
       mutex_m
+      securerandom (>= 0.3)
       tzinfo (~> 2.0)
     ast (2.4.2)
     backport (1.2.0)
     base64 (0.2.0)
     benchmark (0.3.0)
-    bigdecimal (3.1.8)
+    bigdecimal (3.1.9)
     concurrent-ruby (1.3.4)
-    connection_pool (2.4.1)
+    connection_pool (2.5.0)
     diff-lcs (1.5.0)
     drb (2.2.1)
     e2mmap (0.1.0)
@@ -42,8 +45,9 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     language_server-protocol (3.17.0.3)
-    minitest (5.25.1)
-    mutex_m (0.2.0)
+    logger (1.6.4)
+    minitest (5.25.4)
+    mutex_m (0.3.0)
     nokogiri (1.16.5-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.16.5-x86_64-linux)
@@ -87,7 +91,7 @@ GEM
     rubocop-performance (1.23.1)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
-    rubocop-rails (2.27.0)
+    rubocop-rails (2.28.0)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.52.0, < 2.0)
@@ -100,6 +104,7 @@ GEM
       rubocop (~> 1.61)
       rubocop-rspec (~> 3, >= 3.0.1)
     ruby-progressbar (1.13.0)
+    securerandom (0.3.2)
     solargraph (0.50.0)
       backport (~> 1.2)
       benchmark
