@@ -3,5 +3,5 @@
 # Do not change this file directly.  Make all project-level customizations in
 # the base .rubocop.yml file
 
-require:
+plugins:
   - rubocop-rake
