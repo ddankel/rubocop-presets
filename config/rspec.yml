@@ -6,8 +6,6 @@
 plugins:
   - rubocop-rspec
   - rubocop-factory_bot
-
-require:
   - rubocop-rspec_rails
 
 inherit_mode:
