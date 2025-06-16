@@ -5,10 +5,8 @@
 
 plugins:
   - rubocop-rspec
-
-require:
-  - rubocop-rspec_rails
   - rubocop-factory_bot
+  - rubocop-rspec_rails
 
 inherit_mode:
   merge:
