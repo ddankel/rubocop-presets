@@ -1,5 +1,5 @@
 module RubocopPresets
 
-  VERSION = "1.76.1".freeze
+  VERSION = "1.77.0.0".freeze
 
 end
