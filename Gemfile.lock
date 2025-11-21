@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-presets (1.81.6.0)
+    rubocop-presets (1.81.7.0)
       rubocop (>= 1.43, < 1.82)
       rubocop-factory_bot (>= 2.26.1)
       rubocop-performance (>= 1.15, < 1.27)
@@ -49,9 +49,9 @@ GEM
     racc (1.8.1)
     rack (3.2.3)
     rainbow (3.1.1)
-    rake (13.3.0)
+    rake (13.3.1)
     regexp_parser (2.11.3)
-    rubocop (1.81.6)
+    rubocop (1.81.7)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
