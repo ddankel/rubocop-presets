@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rubocop-presets (1.81.7.1)
+    rubocop-presets (1.82.1.0)
       rubocop (>= 1.43, < 1.83)
       rubocop-factory_bot (>= 2.26.1)
       rubocop-performance (>= 1.15, < 1.27)
