@@ -7,7 +7,7 @@ PATH
       rubocop-performance (>= 1.15, < 1.27)
       rubocop-rails (>= 2.17, < 2.35)
       rubocop-rake (>= 0.6, < 0.8)
-      rubocop-rspec (>= 2.17, < 3.10)
+      rubocop-rspec (>= 2.17, < 3.11)
       rubocop-rspec_rails (>= 2.30.0)
 
 GEM
@@ -81,9 +81,10 @@ GEM
     rubocop-rake (0.7.1)
       lint_roller (~> 1.1)
       rubocop (>= 1.72.1)
-    rubocop-rspec (3.9.0)
+    rubocop-rspec (3.10.2)
       lint_roller (~> 1.1)
-      rubocop (~> 1.81)
+      regexp_parser (>= 2.0)
+      rubocop (~> 1.86, >= 1.86.2)
     rubocop-rspec_rails (2.32.0)
       lint_roller (~> 1.1)
       rubocop (~> 1.72, >= 1.72.1)
